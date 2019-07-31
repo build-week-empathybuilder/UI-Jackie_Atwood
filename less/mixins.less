@@ -1,1 +1,66 @@
 //Mixins go here... parametrics mixins
+
+
+
+/*
+button style (PM)
+container/body styling
+
+font specs (PM) linked to variables on var page
+
+images (profile pics)
+images commented out on index page (will consider??)
+images (container two of index page)
+*/
+
+.picSpecs() {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 225px;
+}
+
+.buttonSpecs() {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+.unitTextSpecs() {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: @bubbleColor 2px solid;
+    background-color:@bubbleColor;
+    width: 225px;
+    height: 250px;
+    text-align: center;
+    padding: 20px;
+}
+
+.forTheButton(@buttonOneColor: #66CCDA, @textColor: #1C1C1C, @fontSize: 20px) {
+    background: @buttonOneColor;
+    width: 200px;
+    height: 75px;
+    border-radius: 8px;
+    color: @textColor;
+    font-size: @fontSize;
+    font-family: 'Raleway', sans-serif;
+    
+    &:hover{
+        background-color:@textColor;
+        color:@buttonOneColor; 
+      }
+  }
+
+  .boxShadow() {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .containerBoxShadow() {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    width: 25%;
+  }
+
+  .navBoxShadow() {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 7px;
+  }
