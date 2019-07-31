@@ -1,18 +1,5 @@
 //Mixins go here... parametrics mixins
 
-
-
-/*
-button style (PM)
-container/body styling
-
-font specs (PM) linked to variables on var page
-
-images (profile pics)
-images commented out on index page (will consider??)
-images (container two of index page)
-*/
-
 .picSpecs() {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -35,6 +22,12 @@ images (container two of index page)
     padding: 20px;
 }
 
+.unitTextSpecsMedia() {
+  display: flex;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
 .forTheButton(@buttonOneColor: #66CCDA, @textColor: #1C1C1C, @fontSize: 20px) {
     background: @buttonOneColor;
     width: 200px;
@@ -46,18 +39,37 @@ images (container two of index page)
     
     &:hover{
         background-color:@textColor;
-        color:@buttonOneColor; 
+        color:@navHover; 
       }
   }
 
+  .forTheNavButtons() {
+    background: @navButtonColor;
+    color: @navButtonText;
+
+    &:hover{
+      background-color:@navHover;
+      border-color:@navHover;
+      color: @navButtonColor;
+    }
+  }
+
+  .navMediaSpecs() {
+    font-size: 1.5rem;
+  }
+
   .boxShadow() {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(28, 28, 28, 0.2), 0 6px 20px 0 rgba(28, 28, 28, 0.19);
+  }
+
+  .profileShading() {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .containerBoxShadow() {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 20px;
-    width: 25%;
+    width: 225px;
   }
 
   .navBoxShadow() {

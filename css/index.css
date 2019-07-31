@@ -1,13 +1,3 @@
-/*
-button style (PM)
-container/body styling
-
-font specs (PM) linked to variables on var page
-
-images (profile pics)
-images commented out on index page (will consider??)
-images (container two of index page)
-*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -141,24 +131,50 @@ table {
 }
 html {
   font-size: 62.5%;
+  color: #424242;
 }
 html,
 body {
   font-family: 'Raleway', sans-serif;
 }
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5 {
   font-family: 'Raleway', sans-serif;
 }
-h2 {
+h1 {
   font-size: 2.8rem;
 }
+h2 {
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
 h3 {
-  font-size: 2.8rem;
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.3rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 1rem;
 }
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 1rem;
+  }
 }
 body {
   max-width: 1000px;
@@ -174,41 +190,68 @@ body {
 }
 .header nav {
   display: flex;
-  width: 40%;
+  width: 500px;
   justify-content: flex-end;
   padding: 0 auto;
   align-items: center;
   margin-right: 30px;
 }
+@media (max-width: 500px) {
+  .header nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .header nav a {
   text-decoration: none;
-  border: black solid 2px;
-  width: 30%;
+  border: #602350 solid 2px;
+  width: 125px;
   height: 35px;
   align-items: center;
   text-align: center;
   padding: 5px;
-  margin: 0 auto;
-  background-color: #1C1C1C;
+  margin-right: 15px;
+  background: #602350;
   color: #EDEDED;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 7px;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
 }
-.placeholderLogo {
-  width: 25%;
-  border-radius: 15px;
-  margin-left: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.header nav a:hover {
+  background-color: #FAC7BF;
+  border-color: #FAC7BF;
+  color: #602350;
+}
+@media (max-width: 500px) {
+  .header nav a {
+    width: 100px;
+    height: 25px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
 }
 footer {
-  border: black solid 2px;
+  border: #424242 solid 2px;
   width: 100%;
   margin: 0 auto;
-  height: 100px;
-  background-color: #1C1C1C;
+  height: 75px;
+  background-color: #424242;
   color: #FAC7BF;
+}
+@media (max-width: 500px) {
+  footer {
+    margin-top: 10%;
+  }
+}
+footer p {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+  margin-right: 20px;
 }
 body {
   background-color: #EDEDED;
@@ -221,19 +264,46 @@ body {
   border-radius: 20px;
   background-color: white;
   height: 300px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(28, 28, 28, 0.2), 0 6px 20px 0 rgba(28, 28, 28, 0.19);
 }
-.introduction .introText {
+.introText {
   display: flex;
   flex-direction: column;
-  margin: 25px;
+  margin: 40px;
   padding-top: 20px;
+  margin-bottom: 10%;
 }
-.introduction .introText h2 {
+@media (max-width: 500px) {
+  .introText {
+    padding: 0px;
+    margin: 10px;
+  }
+}
+.introText h2 {
   margin-bottom: 10px;
 }
-.introduction .introText p {
+.introText p {
   margin-bottom: 20px;
+}
+.Logo {
+  border: white solid 1px;
+  background-color: white;
+  border-radius: 7px;
+  width: 270px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  margin-left: 40px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(28, 28, 28, 0.2), 0 6px 20px 0 rgba(28, 28, 28, 0.19);
+}
+@media (max-width: 500px) {
+  .Logo {
+    height: 90px;
+    width: 800px;
+  }
 }
 button {
   background: #66CCDA;
@@ -244,12 +314,17 @@ button {
   font-size: 20px;
   font-family: 'Raleway', sans-serif;
   margin-top: 50px;
-  margin-right: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 20px;
+  box-shadow: 0 4px 8px 0 rgba(28, 28, 28, 0.2), 0 6px 20px 0 rgba(28, 28, 28, 0.19);
 }
 button:hover {
   background-color: #1C1C1C;
-  color: #66CCDA;
+  color: #FAC7BF;
+}
+@media (max-width: 500px) {
+  button {
+    width: 150px;
+  }
 }
 .containerTwo {
   display: flex;
@@ -257,18 +332,37 @@ button:hover {
   margin-top: 30px;
   margin-left: 30px;
   width: 90%;
+  margin-bottom: 50px;
+}
+@media (max-width: 500px) {
+  .containerTwo {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
 }
 .containerTwo .unit {
-  width: 22%;
   margin-left: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 20px;
-  width: 25%;
+  width: 225px;
+}
+@media (max-width: 500px) {
+  .containerTwo .unit {
+    margin-top: 10%;
+    width: 80%;
+  }
 }
 .containerTwo .unit img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   width: 225px;
+}
+@media (max-width: 500px) {
+  .containerTwo .unit img {
+    display: none;
+  }
 }
 .containerTwo .unit .unitText {
   border-bottom-left-radius: 20px;
@@ -280,73 +374,95 @@ button:hover {
   text-align: center;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .containerTwo .unit .unitText {
+    display: flex;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 315px;
+  }
+}
 .containerTwo .unit p {
   padding: 10px;
-}
-.containerThree {
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  border-radius: 20px;
-  background-color: white;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.containerThree .unit {
-  width: 90%;
-  margin: 20px;
-  padding: 20px;
-  width: 95%;
-}
-.containerThree .unit p {
-  margin-top: 20px;
-}
-.bottomBtn {
-  margin-top: 15px;
-}
-.introductionAbout {
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  border-radius: 20px;
-  background-color: white;
-  height: 300px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.introductionAbout .aboutText {
-  display: flex;
-  flex-direction: column;
-  margin: 75px;
-  padding-top: 20px;
-}
-.introductionAbout .aboutText p {
-  margin-bottom: 20px;
 }
 .aboutUsOne {
   display: flex;
   flex-wrap: flex;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+@media (max-width: 500px) {
+  .aboutUsOne {
+    flex-wrap: wrap;
+  }
+}
+.aboutUsOne .proText {
+  text-align: center;
+  width: 152px;
+}
+.aboutUsOne .proText h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  margin-right: 22px;
+  margin-left: 22px;
+  width: 110px;
+}
+.aboutUsOne .proText h4 {
+  margin-bottom: 20px;
+}
+.aboutUsOne .proText a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #424242;
+}
+.aboutUsOne .proText img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .aboutUsTwo {
   display: flex;
   flex-wrap: flex;
+  justify-content: space-around;
+  margin: 50px;
 }
-.sideBar {
-  display: flex;
-  flex-direction: column;
+@media (max-width: 500px) {
+  .aboutUsTwo {
+    flex-wrap: wrap;
+  }
+}
+.aboutUsTwo .proText {
   text-align: center;
-  background-color: #FAC7BF;
-  border-radius: 15px;
-  justify-content: flex-end;
+  width: 150px;
 }
-.sideBar p {
+.aboutUsTwo .proText h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  margin-right: 22px;
+  margin-left: 22px;
+  width: 100px;
+}
+.aboutUsTwo .proText h4 {
   margin-bottom: 20px;
 }
-.sideBar .btn {
-  margin-left: 35px;
-  margin-bottom: 20px;
+.aboutUsTwo .proText a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #424242;
+}
+.aboutUsTwo .proText img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.profile {
+  margin-top: 30px;
+}
+.profile h1 {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .profile h1 {
+    margin-top: 10px;
+  }
 }
 img {
   width: 150px;

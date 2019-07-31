@@ -8,31 +8,36 @@
     justify-content: space-between;
     nav {
         display: flex;
-        width: 40%;
+        width: 500px;
         justify-content: flex-end;
         padding: 0 auto;
         align-items: center;
         margin-right: 30px;
+        @media @phone {
+            display: flex;
+            flex-direction: column;
+        }
         a {
             text-decoration: none;
-            border: black solid 2px;
-            width: 30%;
+            border: #602350 solid 2px;
+            width: 125px;
             height: 35px;
             align-items: center;
             text-align: center;
             padding: 5px;
-            margin: 0 auto;
-            background-color: @navButtonColor;
-            color: @navButtonText;
+            margin-right: 15px;
+            .forTheNavButtons();
             .navBoxShadow();
             .buttonSpecs();
+            @media @phone {
+                width: 100px;
+                height: 25px;
+                margin-top: 2px;
+                margin-bottom: 5px;
+                display: flex;
+                justify-content: center;
+                .navMediaSpecs()
+            }
         }
     }
-}
-
-.placeholderLogo {
-    width: 25%;
-    border-radius: 15px;
-    margin-left: 30px;
-    .boxShadow();
 }
