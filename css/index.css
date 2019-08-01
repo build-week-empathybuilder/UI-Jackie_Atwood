@@ -409,6 +409,9 @@ button:hover {
     padding: 0 auto;
   }
 }
+a {
+  font-size: 2rem;
+}
 .aboutUsOne {
   display: flex;
   flex-wrap: flex;
@@ -469,9 +472,6 @@ button:hover {
   margin-left: 22px;
   width: 100px;
 }
-.aboutUsTwo .proText h4 {
-  margin-bottom: 20px;
-}
 .aboutUsTwo .proText a {
   font-size: 1.3rem;
   text-decoration: none;
@@ -500,4 +500,52 @@ img {
   width: 150px;
   display: flex;
   justify-items: space-around;
+}
+.githubLogo {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 100px;
+  width: 60px;
+  margin-left: 45px;
+}
+.githubLogo2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 100px;
+  width: 60px;
+  margin-left: 45px;
+  margin-top: 50px;
+}
+.githubLogo3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 100px;
+  width: 60px;
+  margin-left: 45px;
+  margin-top: 40px;
+}
+.githubLogo4 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 100px;
+  width: 60px;
+  margin-left: 45px;
+  margin-top: 65px;
+}
+.githubLogo5 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 100px;
+  width: 60px;
+  margin-left: 45px;
+  margin-top: 40px;
+}
+.githubLogo6 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 100px;
+  width: 60px;
+  margin-left: 45px;
+  margin-top: 95px;
+}
+.githubLogo7 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 100px;
+  width: 60px;
+  margin-left: 45px;
+  margin-top: 80px;
 }
