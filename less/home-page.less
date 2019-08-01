@@ -137,8 +137,14 @@ a {
         flex-wrap: wrap;
     }
     .proText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         text-align: center;
         width: 152px;
+        @media @phone {
+            align-items: stretch;
+        }
         h3 {
             margin-top: 25px;
             margin-bottom: 10px;
@@ -172,6 +178,9 @@ a {
         flex-wrap: wrap;
     }
     .proText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         text-align: center;
         width: 150px;
         h3 {
@@ -191,10 +200,6 @@ a {
             .profileShading();
         }
     }
-}
-
-.fa-github {
-    font-weight: 50px;
 }
 
 .profile {
@@ -219,6 +224,10 @@ img {
     .githubLogoShadow();
     width: 60px;
     margin-left: 45px;
+    @media @phone {
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
 }
 
 .githubLogo2 {
@@ -226,6 +235,9 @@ img {
     width: 60px;
     margin-left: 45px;
     margin-top: 50px;
+    @media @phone {
+        margin-bottom: 20px;
+    }
 }
 
 .githubLogo3 {
@@ -233,6 +245,10 @@ img {
     width: 60px;
     margin-left: 45px;
     margin-top: 40px;
+    @media @phone {
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
 }
 
 .githubLogo4 {
@@ -240,6 +256,9 @@ img {
     width: 60px;
     margin-left: 45px;
     margin-top: 65px;
+    @media @phone {
+        margin-bottom: 20px;
+    }
 }
 
 .githubLogo5 {
@@ -247,6 +266,9 @@ img {
     width: 60px;
     margin-left: 45px;
     margin-top: 40px;
+    @media @phone {
+        margin-bottom: 20px;
+    }
 }
 
 .githubLogo6 {

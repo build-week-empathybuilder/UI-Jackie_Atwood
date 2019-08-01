@@ -424,8 +424,16 @@ a {
   }
 }
 .aboutUsOne .proText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
   width: 152px;
+}
+@media (max-width: 500px) {
+  .aboutUsOne .proText {
+    align-items: stretch;
+  }
 }
 .aboutUsOne .proText h3 {
   margin-top: 25px;
@@ -462,6 +470,9 @@ a {
   }
 }
 .aboutUsTwo .proText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
   width: 150px;
 }
@@ -479,9 +490,6 @@ a {
 }
 .aboutUsTwo .proText img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.fa-github {
-  font-weight: 50px;
 }
 .profile {
   margin-top: 30px;
@@ -507,12 +515,23 @@ img {
   width: 60px;
   margin-left: 45px;
 }
+@media (max-width: 500px) {
+  .githubLogo {
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
+}
 .githubLogo2 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 100px;
   width: 60px;
   margin-left: 45px;
   margin-top: 50px;
+}
+@media (max-width: 500px) {
+  .githubLogo2 {
+    margin-bottom: 20px;
+  }
 }
 .githubLogo3 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -521,6 +540,12 @@ img {
   margin-left: 45px;
   margin-top: 40px;
 }
+@media (max-width: 500px) {
+  .githubLogo3 {
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
+}
 .githubLogo4 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 100px;
@@ -528,12 +553,22 @@ img {
   margin-left: 45px;
   margin-top: 65px;
 }
+@media (max-width: 500px) {
+  .githubLogo4 {
+    margin-bottom: 20px;
+  }
+}
 .githubLogo5 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 100px;
   width: 60px;
   margin-left: 45px;
   margin-top: 40px;
+}
+@media (max-width: 500px) {
+  .githubLogo5 {
+    margin-bottom: 20px;
+  }
 }
 .githubLogo6 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
