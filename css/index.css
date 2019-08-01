@@ -152,11 +152,16 @@ h2 {
 }
 @media (max-width: 500px) {
   h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 h3 {
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  h3 {
+    font-size: 3rem;
+  }
 }
 h4 {
   font-size: 1.3rem;
@@ -173,7 +178,7 @@ p {
 }
 @media (max-width: 500px) {
   p {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 body {
@@ -266,6 +271,13 @@ body {
   height: 300px;
   box-shadow: 0 4px 8px 0 rgba(28, 28, 28, 0.2), 0 6px 20px 0 rgba(28, 28, 28, 0.19);
 }
+@media (max-width: 500px) {
+  .introduction {
+    height: 350px;
+    padding: 10px;
+    text-align: center;
+  }
+}
 .introText {
   display: flex;
   flex-direction: column;
@@ -323,7 +335,7 @@ button:hover {
 }
 @media (max-width: 500px) {
   button {
-    width: 150px;
+    width: 110px;
   }
 }
 .containerTwo {
@@ -376,14 +388,26 @@ button:hover {
 }
 @media (max-width: 500px) {
   .containerTwo .unit .unitText {
-    display: flex;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     width: 315px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .containerTwo .unit h2 {
+    margin: 0 auto;
   }
 }
 .containerTwo .unit p {
   padding: 10px;
+}
+@media (max-width: 500px) {
+  .containerTwo .unit p {
+    padding: 0 auto;
+  }
 }
 .aboutUsOne {
   display: flex;
@@ -417,6 +441,11 @@ button:hover {
 }
 .aboutUsOne .proText img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media (max-width: 500px) {
+  .aboutUsOne .proText img {
+    margin-top: 10px;
+  }
 }
 .aboutUsTwo {
   display: flex;
