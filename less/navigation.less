@@ -1,0 +1,43 @@
+//Navigation information goes here
+
+.header {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    nav {
+        display: flex;
+        width: 500px;
+        justify-content: flex-end;
+        padding: 0 auto;
+        align-items: center;
+        margin-right: 30px;
+        @media @phone {
+            display: flex;
+            flex-direction: column;
+        }
+        a {
+            text-decoration: none;
+            border: #602350 solid 2px;
+            width: 125px;
+            height: 35px;
+            align-items: center;
+            text-align: center;
+            padding: 5px;
+            margin-right: 15px;
+            .forTheNavButtons();
+            .navBoxShadow();
+            .buttonSpecs();
+            @media @phone {
+                width: 100px;
+                height: 25px;
+                margin-top: 2px;
+                margin-bottom: 5px;
+                display: flex;
+                justify-content: center;
+                .navMediaSpecs()
+            }
+        }
+    }
+}
